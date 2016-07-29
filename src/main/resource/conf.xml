@@ -1,0 +1,20 @@
+ <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<!-- 配置数据库连接信息 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="param1" />
+				<property name="username" value="param2" />
+				<property name="password" value="param3" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<mappers>
+		<mapper class="cn.sunxyz.generator.mapper.TableMapper" />
+	</mappers>
+
+</configuration>

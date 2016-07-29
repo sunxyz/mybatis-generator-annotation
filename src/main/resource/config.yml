@@ -1,0 +1,13 @@
+#数据源配置
+url: jdbc:mysql://localhost:3306/test
+userName: root
+password: 123456
+#实体类配置    
+entityPackage: cn.sunxyz.test.enitity
+mapperPackage: cn.sunxyz.test.mapper
+filePath: d:/generator/src/
+table2ClazzMap:
+#表和对象对应
+    user: User
+    admin: Admin
+          
